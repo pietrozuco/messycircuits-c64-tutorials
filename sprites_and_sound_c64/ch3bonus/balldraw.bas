@@ -5,7 +5,7 @@
 50 sm=1024:cm=55296:npv=0:ppv=32:x=0
 60 poke sm+x,224:poke cm+x,1
 65 rem main loop
-70 get a$:ifa$=""then goto 70
+70 get a$:if a$=""then goto 70
 80 if asc(a$)=29 then off=x+1:gosub 1000
 90 if asc(a$)=157 then off=x-1:gosub 1000
 100 if asc(a$)=17 then off=(x+40):gosub 1000
